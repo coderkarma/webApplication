@@ -1,0 +1,36 @@
+
+
+ body { 
+    background-image: url("/images/beach.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 3s; 
+    background-blend-mode: darken;
+}  
+
+#img {
+    width: 100vw;
+}
+
+.card {
+    margin: 10% auto 0;
+    background: rgb(255, 255, 255, 0.1);
+
+
+}
+
+.text-label {
+    color: white;
+}
+.card-body{
+    text-align:center;
+
+}
+
+.card{
+    width: 350px;
+    border-radius: 25px;
+}
