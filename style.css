@@ -1,37 +1,24 @@
-
-
- body { 
-    background-image: url("/images/beach.jpg");
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    transition: 3s; 
-    background-blend-mode: darken;
-}  
-
-#img {
-    width: 100vw;
+.card_login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 20px;
 }
-
-.card {
-    margin: 10% auto 0;
-    background: rgb(255, 255, 255, 0.1);
-
-
+.card_register{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 20px;
 }
-
 .text-label {
     color: white;
 }
 .card-body{
     text-align:center;
-
-}
-
-.card{
-    width: 350px;
-    border-radius: 25px;
 }

@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<!-- Body with a video background -->
+<body data-vide-bg="video/backgroundvideo">
   <div class="backimage"></div>
   <!-- NavBar Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <div class="collapse navbar-collapse" id="navbarToggler">
       <a class="navbar-brand" href="#">Home</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Sign Up</a>
+          <a id="sign_up" class="nav-link" href="#">Sign Up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sign In</a>
+          <a id="sign_in" class="nav-link" href="#">Sign In</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -31,36 +32,55 @@
       </form>
     </div>
   </nav>
-  <!-- Login Div -->
-  <div class="container-fluid">
-    <!-- Width Card -->
-    <div class="card">
+    
+    <!-- Width Card With Login -->
+    <div class="card_login card">
       <!-- Add Padding -->
       <div class="card-body">
         <!-- Div Form -->
         <form action="">
           <div class="form-group">
-            <label class="text-label" for="email">Email address:</label>
-            <input type="email" class="form-control" id="email">
+            <label class="text-label">Email address:</label>
+            <input type="email" class="form-control" id="s_i_email">
           </div>
           <div class="form-group">
-            <label class="text-label" for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd">
+            <label class="text-label">Password:</label>
+            <input type="password" class="form-control" id="s_i_pwd">
           </div>
         </form>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button id="login_b" type="submit" class="btn btn-primary">Login</button>
       </div>
     </div>
-  </div>
+    <!-- Width Card With Register -->
+    <div class="card_register card">
+      <!-- Add Padding -->
+      <div class="card-body">
+        <!-- Div Form -->
+        <form action="">
+            <div class="form-group">
+                <label class="text-label">Username:</label>
+                <input type="text" class="form-control" id="s_u_username">
+            </div>
+            <div class="form-group">
+                <label class="text-label">Email address:</label>
+                <input type="email" class="form-control" id="s_u_email">
+            </div>
+            <div class="form-group">
+                <label class="text-label">Password:</label>
+                <input type="password" class="form-control" id="s_u_pwd">
+          </div>
+        </form>
+        <button id="register_b" type="submit" class="btn btn-primary">Register</button>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
     <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="jquery.chocolate.js"></script>
 
-    <script src="script.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/jquery.vide.min.js"></script>
 </body>
 </html>
